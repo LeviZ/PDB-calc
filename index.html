@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PDB Steel Calculator</title>
+    <meta name="description" content="Steel Table Legs Calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech|Roboto:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <h1>Prebuilt</h1>
+    <form id="prebuilt">
+      <select id="prebuilt-opt">
+        <optgroup label="Prebuilt Options">
+          <option selected="selected">Coffee - Trapezoid</option>
+          <option>Coffee - Square</option>
+          <option>Dining - Trapezoid</option>
+          <option>Dining - Square</option>
+        </optgroup>
+      </select>
+
+      <section class="result">
+        <h3>Total Length:</h3>
+        <h5 class="result-prebuilt">"</h5>
+        <h3>Bend Length:</h3>
+        <h5 class="result-prebuilt">"</h5>
+      </section>
+    </form>
+
+
+    <h1>Custom</h1>
+    <form id="custom">
+      <section>
+        <label for="width" class="inline-label">Width</label>
+        <input type="text" id="width" placeholder="inches">
+      </section>
+      <section>
+        <label for="height" class="inline-label">Height</label>
+        <input type="text" id="height" placeholder="inches">
+      </section>
+      <label for="size">Size</label>
+      <select id="size">
+        <option selected="selected">Small</option>
+        <option>Large</option>
+      </select>
+      <label for="shape">Shape</label>
+      <select id="shape">
+        <option selected="selected">Trapezoid</option>
+        <option>Non-trapezoid</option>
+      </select>
+
+      <section class="result">
+      <h3>Total Length:</h3>
+      <h5 class="result-custom"></h5>
+      <h3>Bend Length:</h3>
+      <h5 class="result-custom"></h5>
+    </section>
+    </form>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
