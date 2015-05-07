@@ -15,22 +15,22 @@
     <h1>Prebuilt</h1>
     <form id="prebuilt">
       <select id="prebuilt-opt">
+        <option>Select an option...</option>
         <optgroup label="Prebuilt Options">
-          <option selected="selected">Coffee - Trapezoid</option>
-          <option>Coffee - Square</option>
-          <option>Dining - Trapezoid</option>
-          <option>Dining - Square</option>
+          <option value="16,16,s,trapezoid,pb-">Coffee - Trapezoid</option>
+          <option value="16,16,s,square,pb-">Coffee - Square</option>
+          <option value="28,28,l,trapezoid,pb-">Dining - Trapezoid</option>
+          <option value="28,28,l,square,pb-">Dining - Square</option>
         </optgroup>
       </select>
 
-
         <section>
           <h3 class="result-prebuilt-label">Total Length:</h3>
-          <h5 class="result-prebuilt">"</h5>
+          <h5 class="result-prebuilt" id="pb-length">"</h5>
         </section>
         <section>
           <h3 class="result-prebuilt-label">Bend Lengths:</h3>
-          <h5 class="result-prebuilt">"</h5>
+          <h5 class="result-prebuilt" id="pb-bends">"</h5>
         </section>
 
     </form>
@@ -58,12 +58,12 @@
       </select>
 
       <section class="result-custom-wrapper section group">
-        <button id="calc" class="col span_1_of_6">Go</button>
+        <button type="button" id="calc" class="col span_1_of_6">Go</button>
         <section class="custom-results col span_5_of_6">
           <h3 class="result-custom-label">Total:</h3>
           <h5 class="result-custom" id="length">"</h5>
           <h3 class="result-custom-label">Bends:</h3>
-          <h5 class="result-custom" id="bend-1">"</h5>
+          <h5 class="result-custom" id="bends">"</h5>
         </section>
       </section>
     </form>
