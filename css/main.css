@@ -112,6 +112,12 @@ button {
     margin-top: 10%;
 }
 
+button:hover {
+  color: #c2bc74;
+  border: 2px solid #c2bc74;
+  transition: all ease .3s;
+}
+
 .result-custom, .result-custom-label {
   display: inline-block;
   margin: 0 .2em;
@@ -125,12 +131,7 @@ button {
   width: 20%;
 }
 
-.result-custom-wrapper {
-  width: 100%;
-}
-
 .custom-results {
-  width: 80%;
   display: inline-block;
 }
 
