@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <h1>Prebuilt</h1>
+
     <form id="prebuilt">
       <select id="prebuilt-opt">
         <option>Select an option...</option>
@@ -24,27 +24,27 @@
         </optgroup>
       </select>
 
-        <section>
-          <h3 class="result-prebuilt-label">Total Length:</h3>
-          <h5 class="result-prebuilt" id="pb-length">"</h5>
+        <section class="section group">
+          <h3 class="result-prebuilt-label">Total:</h3>
+          <h5 class="result-prebuilt" id="pb-length"></h5>
         </section>
-        <section>
-          <h3 class="result-prebuilt-label">Bend Lengths:</h3>
-          <h5 class="result-prebuilt" id="pb-bends">"</h5>
+        <section class="section group">
+          <h3 class="result-prebuilt-label">Bends:</h3>
+          <h5 class="result-prebuilt" id="pb-bends"></h5>
         </section>
 
     </form>
 
 
-    <h1>Custom</h1>
+
     <form id="custom">
       <section class="w-h">
         <label for="width" class="inline-label">Width</label>
-        <input type="text" id="width" placeholder="inches">
+        <input type="number" id="width" placeholder="inches">
       </section>
       <section class="w-h">
         <label for="height" class="inline-label">Height</label>
-        <input type="text" id="height" placeholder="inches">
+        <input type="number" id="height" placeholder="inches">
       </section>
       <label for="size">Size</label>
       <select id="size">
@@ -58,15 +58,18 @@
       </select>
 
       <section class="result-custom-wrapper section group">
-        <button type="button" id="calc" class="col span_1_of_6">Go</button>
+
         <section class="custom-results col span_5_of_6">
           <h3 class="result-custom-label">Total:</h3>
-          <h5 class="result-custom" id="length">"</h5>
+          <h5 class="result-custom" id="length"></h5>
           <h3 class="result-custom-label">Bends:</h3>
-          <h5 class="result-custom" id="bends">"</h5>
+          <h5 class="result-custom" id="bends"></h5>
         </section>
+        <button type="button" id="calc" class="col span_1_of_6">Go</button>
       </section>
+      <button type="reset" class="reset">Reset</button>
     </form>
+
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/main.js"></script>

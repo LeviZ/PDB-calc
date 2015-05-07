@@ -12,12 +12,18 @@ input {
   border-bottom: solid 2px #3D3642;
   transition: border 0.3s;
   background-color: #BF765E;
-  margin-bottom: .5em;
+  margin-bottom: .1em;
+  color: white;
+  outline: none;
 }
 
 input:focus {
-  border-bottom: solid 2px #969696;
+  border-bottom: solid 2px #ebe7e6;
+}
 
+
+::-webkit-input-placeholder {
+  color: #ebe7e6;
 }
 
 body {
@@ -27,8 +33,9 @@ body {
 
 h1 {
   font-family: 'Share Tech', sans-serif;
-  margin: .5em auto;
+  margin: .1em auto;
   color:#ebe7e6;
+  font-size: 1.5em;
 }
 
 select {
@@ -41,7 +48,6 @@ select {
   font-size:16px;
   font-weight:bold;
   text-align:center;
-  text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
   border-radius:5px;
   -webkit-border-radius:5px;
   -webkit-appearance: none;
@@ -51,6 +57,7 @@ select {
   transition:0.3s ease all;
   width: 70%;
   margin-bottom: 1em;
+  color: #3D3642;
 }
 
 select:hover {
@@ -64,7 +71,7 @@ select:focus, select:active {
 
 #prebuilt, #custom {
   border-radius: 5px;
-  margin-bottom: 2em;
+  margin-top: 1em;
   padding: 1em .5em;
 }
 
@@ -82,34 +89,43 @@ label {
 }
 
 .w-h {
-  margin-bottom: .5em;
+  margin-bottom: .4em;
 }
 
 .result-prebuilt, .result-prebuilt-label {
   display: inline-block;
-  margin: 0 .2em;
+  margin: 0 .4em;
 }
 
 h5 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: white;
+  margin: 0 0 0 .6em;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: normal;
+  margin: 0;
 }
 
 button {
   width: 18%;
   color: #ebe7e6;
   line-height:2em;
-    border: 2px solid #ebe7e6;
-    border-radius: 50%;
-    color:#ebe7e6;
-    text-align:center;
-    text-decoration:none;
-    background: #3D3642;
-    box-shadow: 0 0 3px gray;
-    font-weight:bold;
-    font-size: 1.3em;
-    display: inline-block;
-    margin-top: 10%;
+  border: 2px solid #ebe7e6;
+  border-radius:10%;
+  color:#ebe7e6;
+  text-align:center;
+  text-decoration:none;
+  background: #3D3642;
+  box-shadow: 0 0 3px gray;
+  font-weight:bold;
+  font-size: 1.3em;
+  display: inline-block;
+  margin-top: 5%;
+  outline: none;
+  padding: .5em 0;
 }
 
 button:hover {
@@ -120,7 +136,6 @@ button:hover {
 
 .result-custom, .result-custom-label {
   display: inline-block;
-  margin: 0 .2em;
 }
 
 .result-custom {
@@ -133,6 +148,21 @@ button:hover {
 
 .custom-results {
   display: inline-block;
+}
+
+.reset {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  background-color: #C4BAB6;
+  color: #3D3642;
+  border: 2px solid #3D3642;
+  padding: .8em 0;
+}
+
+.reset:hover {
+  color: #ebe7e6;
+  border: 2px solid #ebe7e6;
 }
 
 

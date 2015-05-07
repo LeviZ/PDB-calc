@@ -23,6 +23,6 @@
     var b2 = g + s + 3*b/2
 
     $('#' + idPrefix + 'length').text(L.toFixed(2) + '"')
-    $('#' + idPrefix + 'bends').text([b1, b2].map(function(n) { return n.toFixed(2) + '"' }).join(', '))
+    $('#' + idPrefix + 'bends').text([b2, b1].map(function(n) { return n.toFixed(2) + '"' }).join(', '))
   }
 })()
