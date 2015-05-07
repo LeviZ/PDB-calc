@@ -23,12 +23,16 @@
         </optgroup>
       </select>
 
-      <section class="result">
-        <h3>Total Length:</h3>
-        <h5 class="result-prebuilt">43.567"</h5>
-        <h3>Bend Length:</h3>
-        <h5 class="result-prebuilt">"</h5>
-      </section>
+
+        <section>
+          <h3 class="result-prebuilt-label">Total Length:</h3>
+          <h5 class="result-prebuilt">43.567"</h5>
+        </section>
+        <section>
+          <h3 class="result-prebuilt-label">Bend Lengths:</h3>
+          <h5 class="result-prebuilt">54.65, 45.65"</h5>
+        </section>
+
     </form>
 
 
@@ -53,14 +57,14 @@
         <option value="square">Non-trapezoid</option>
       </select>
 
-      <button id="calc">Go</button>
-      <section class="result-custom">
-        <h3>Total:</h3>
-        <h5 class="" id="length">60.123"</h5>
-      </section>
-      <section class="result-custom">
-        <h3>Bends:</h3>
-        <h5 class="" id="bend-1">4.25"</h5>
+      <section class="result-custom-wrapper section group">
+        <button id="calc" class="col span_1_of_6">Go</button>
+        <section class="custom-results col span_5_of_6">
+          <h3 class="result-custom-label">Total:</h3>
+          <h5 class="result-custom" id="length">60.123"</h5>
+          <h3 class="result-custom-label">Bends:</h3>
+          <h5 class="result-custom" id="bend-1">4.25, 5.76"</h5>
+        </section>
       </section>
     </form>
 
