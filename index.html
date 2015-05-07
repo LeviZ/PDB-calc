@@ -15,19 +15,20 @@
     <h1>Prebuilt</h1>
     <form id="prebuilt">
       <select id="prebuilt-opt">
+        <option>Select an option...</option>
         <optgroup label="Prebuilt Options">
-          <option selected="selected">Coffee - Trapezoid</option>
-          <option>Coffee - Square</option>
-          <option>Dining - Trapezoid</option>
-          <option>Dining - Square</option>
+          <option value="16,16,s,trapezoid,pb-">Coffee - Trapezoid</option>
+          <option value="16,16,s,square,pb-">Coffee - Square</option>
+          <option value="28,28,l,trapezoid,pb-">Dining - Trapezoid</option>
+          <option value="28,28,l,square,pb-">Dining - Square</option>
         </optgroup>
       </select>
 
       <section class="result">
-        <h3>Total Length:</h3>
-        <h5 class="result-prebuilt">43.567"</h5>
-        <h3>Bend Length:</h3>
-        <h5 class="result-prebuilt">"</h5>
+        <h3>Total:</h3>
+        <h5 class="result-prebuilt" id="pb-length"></h5>
+        <h3>Bends:</h3>
+        <h5 class="result-prebuilt" id="pb-bends"></h5>
       </section>
     </form>
 
@@ -53,14 +54,14 @@
         <option value="square">Non-trapezoid</option>
       </select>
 
-      <button id="calc">Go</button>
+      <button type="button" id="calc">Go</button>
       <section class="result-custom">
         <h3>Total:</h3>
-        <h5 class="" id="length">60.123"</h5>
+        <h5 class="" id="length"></h5>
       </section>
       <section class="result-custom">
         <h3>Bends:</h3>
-        <h5 class="" id="bend-1">4.25"</h5>
+        <h5 class="" id="bends"></h5>
       </section>
     </form>
 
