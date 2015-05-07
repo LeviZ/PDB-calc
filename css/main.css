@@ -1,4 +1,4 @@
-form,h1,h2,h3,h4,h5,select,label {
+form,h1,h2,h3,h4,h5 {
   display: block;
   width: 90%;
   margin: 0 auto;
@@ -22,11 +22,13 @@ input:focus {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #4F3938;
 }
 
 h1 {
   font-family: 'Share Tech', sans-serif;
   margin: .5em auto;
+  color:#ebe7e6;
 }
 
 select {
@@ -46,7 +48,9 @@ select {
   border:0;
   outline:0;
   -webkit-transition:0.3s ease all;
-          transition:0.3s ease all;
+  transition:0.3s ease all;
+  width: 70%;
+  margin-bottom: 1em;
 }
 
 select:hover {
@@ -61,7 +65,7 @@ select:focus, select:active {
 #prebuilt, #custom {
   border-radius: 5px;
   margin-bottom: 2em;
-  padding: 1.5em .5em;
+  padding: 1em .5em;
 }
 
 #prebuilt {
@@ -72,9 +76,27 @@ select:focus, select:active {
   background-color: #BF765E;
 }
 
-.inline-label {
+label {
   display: inline-block;
-  width: 30%;
+  width: 25%;
+}
+
+.w-h {
+  margin-bottom: .5em;
+}
+
+h3, h5 {
+  display: inline-block;
+}
+
+h3 {
+  width: 60%;
+}
+
+h5 {
+  width: 35%;
+  font-size: 2em;
+  color: white;
 }
 
 
