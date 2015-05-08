@@ -21,9 +21,16 @@ input:focus {
   border-bottom: solid 2px #ebe7e6;
 }
 
-
+/*Change placeholder color*/
 ::-webkit-input-placeholder {
   color: #ebe7e6;
+}
+
+/*remover sipinner from type="number"*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 body {
@@ -98,29 +105,31 @@ label {
 }
 
 h5 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: white;
-  margin: 0 0 0 .6em;
+  margin: 0 0 0 1em;
+  width: 60%;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: normal;
   margin: 0;
+  width: 20%;
 }
 
 button {
   width: 18%;
   color: #ebe7e6;
-  line-height:2em;
+  line-height: 2em;
   border: 2px solid #ebe7e6;
   border-radius:10%;
-  color:#ebe7e6;
-  text-align:center;
-  text-decoration:none;
+  color: #ebe7e6;
+  text-align: center;
+  text-decoration: none;
   background: #3D3642;
   box-shadow: 0 0 3px gray;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 1.3em;
   display: inline-block;
   margin-top: 5%;
@@ -136,14 +145,6 @@ button:hover {
 
 .result-custom, .result-custom-label {
   display: inline-block;
-}
-
-.result-custom {
-  width: 70%;
-}
-
-.result-custom-label {
-  width: 20%;
 }
 
 .custom-results {

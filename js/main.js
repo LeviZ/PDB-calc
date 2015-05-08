@@ -11,7 +11,7 @@
   function calc(w, h, size, shape, idPrefix) {
     function degrees(angle) { return angle * Math.PI / 180 }
 
-    var b = .5 // bend tolerance
+    var b = .25 // bend tolerance
     var g = size == 's' ? 4 : 7 // wing length
     var a = shape == 'square' ? 90 : size == 's' ? 83 : 85 // bend angle
 
@@ -23,6 +23,6 @@
     var b2 = g + s + 3*b/2
 
     $('#' + idPrefix + 'length').text(L.toFixed(2) + '"')
-    $('#' + idPrefix + 'bends').text([b2, b1].map(function(n) { return n.toFixed(2) + '"' }).join(', '))
+    $('#' + idPrefix + 'bends').text([b2].map(function(n) { return n.toFixed(2) + '"' }).join(', '))
   }
 })()
