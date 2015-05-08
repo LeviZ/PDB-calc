@@ -1,4 +1,8 @@
 (function() {
+  $('form').on('reset', function() {
+    $('[id $= "length"], [id $= "bends"]').text('')
+  })
+
   $('#prebuilt-opt').change(function() {
     var opts = $(this).val().split(',')
     calc(+opts[0], +opts[1], opts[2], opts[3], opts[4])
