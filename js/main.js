@@ -58,7 +58,7 @@
     var bend1 = bend2 - s
 
     $('#' + idPrefix + 'length').text(inchFormat(L))
-    $('#' + idPrefix + 'bends').text([bend2, bend1].map(inchFormat).join(', '))
+    $('#' + idPrefix + 'bends').text([bend2].map(inchFormat).join(', '))
   }
 
   function wingLength(size) { return size == 's' ? 4 : 7 }
